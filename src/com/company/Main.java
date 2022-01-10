@@ -25,6 +25,26 @@ public class Main {
 
         System.out.println(otherAge);
 
+        byte anotherAge = 34;
+        //uses less memory than int
+
+        int viewCount = 123_456_789;
+        //the underscores serve as commas to make the number more readable (ex: 123,456,789)
+
+        long viewCount2 = 3_123_456_789L;
+        // Java as a default sees numbers as integers so if the number is too large for the type, the type needs to be changed and a suffix needs to be added (lowercase or uppercase work)
+
+        float price = 10.99F;
+        // Java as a default sees decimals as a double type, so again the suffix needs to be added for float type
+
+        char letter = 'A';
+        //single characters use single quotation marks
+
+        boolean isEligible = true;
+        // orange words are reserved keywords, cannot be used as identifiers/names of variables, classes or methods
+
+
+
 
     }
 }
