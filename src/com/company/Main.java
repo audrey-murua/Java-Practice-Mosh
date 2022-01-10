@@ -1,5 +1,6 @@
 package com.company;
 
+import java.awt.*;
 import java.util.Date;
 //date util package that has been imported
 
@@ -14,6 +15,7 @@ public class Main {
 
         int age = 35;
         //initializing variable and then running it
+
 //        int age = 35, temperature = 20;
         // declaring multiple variables on a single line, not recommended, makes code difficult to read.
         age = 39;
@@ -53,6 +55,26 @@ public class Main {
         // repeat the class of date
         // new Date(); is an instance of the date class and is a defined template/blueprint for creating new objects/new instances
         System.out.println(now);
+
+        byte x = 1;
+        byte y = x;
+        // byte x has a value of 1.
+        // byte y has the value of x which is 1
+
+        x = 2;
+        //reassigning the value of x to 2
+
+        System.out.println(y);
+        //just because the value of x was reassigned a value, y does not take on that change because x and y are independent of each other
+        // result of y is still 1
+
+        Point point1 = new Point(1,1);
+        //point has util package that was imported to the top
+        Point point2 = point1;
+        //point1 and point2 are referencing the exact same point object in memory which means they are not independent of each other
+        point1.x = 2;
+        System.out.println(point2);
+        //result is that if you change point1, point2 will be affected as well
 
 
 
