@@ -1,5 +1,8 @@
 package com.company;
 
+import java.util.Date;
+//date util package that has been imported
+
 public class Main {
 
     public static void main(String[] args) {
@@ -42,6 +45,14 @@ public class Main {
 
         boolean isEligible = true;
         // orange words are reserved keywords, cannot be used as identifiers/names of variables, classes or methods
+
+        //initializing reference type variable
+        Date now = new Date();
+       // date has util package so in order to use a class from a different package, we need to import it. It is imported at the very top
+        // new operator is used to allocate memory for this variable
+        // repeat the class of date
+        // new Date(); is an instance of the date class and is a defined template/blueprint for creating new objects/new instances
+        System.out.println(now);
 
 
 
