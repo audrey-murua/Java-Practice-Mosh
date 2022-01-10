@@ -77,6 +77,51 @@ public class Main {
         //result is that if you change point1, point2 will be affected as well
 
 
+        //Strings
+
+        String message = "Hello World" + "!!!";
+        //strings are reference types, but because it is often used, does not need the new operator and does not need to repeat the class
+        //strings can be concatenated with a +
+        //String is a class and can access the . operator for methods
+        System.out.println(message);
+
+        System.out.println(message.endsWith("!!"));
+        //the endsWith method that was called returns a boolean of true because the string message does in fact end with !!
+        //another useful method for strings is .startsWith   returns false because it does not begin with !!
+        System.out.println(message.startsWith("!!"));
+
+        System.out.println(message.length());
+        //counts the number of characters in the string
+
+        System.out.println(message.indexOf("W"));
+        //finds the index of the character that was called if it exists, otherwise -1 will be displayed
+
+        System.out.println(message.replace("!", "*"));
+        //replaces a character with another, this case replaces the argument of ! with an argument of *
+        //does not modify original message string, but returns a new string with the modifications because strings are immutable, cannot be changed
+        //any methods that modify a string will return a new string object
+
+        System.out.println(message.toLowerCase());
+        //toLowerCase converts all characters to lowercase
+
+        System.out.println(message.toUpperCase());
+        //toUpperCase converts all characters to uppercase
+
+        System.out.println(message.trim());
+        //gets rid of extra white spaces that are at the beginning or the end of a string
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
