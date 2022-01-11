@@ -1,8 +1,9 @@
 package com.company;
 
 import java.awt.*;
+
 import java.util.Date;
-//date util package that has been imported
+//util packages that have been imported
 
 public class Main {
 
@@ -109,6 +110,29 @@ public class Main {
 
         System.out.println(message.trim());
         //gets rid of extra white spaces that are at the beginning or the end of a string
+
+        //ESCAPE SEQUENCES
+
+        String doubleQuoteEscape = "This is how to use \"double quotes\" in a string.";
+        System.out.println(doubleQuoteEscape);
+        // backslashes before the quotes allows them to be visible within the string
+
+        String backSlashEscape = "C:\\Windows\\...";
+        System.out.println(backSlashEscape);
+        // a backslash before a backslash escapes it so that it can be viewed when printed
+
+        String backSlashN = "Another example\nusing a different escape sequence";
+        System.out.println(backSlashN);
+        // \n creates a new line where it is placed
+
+        String backSlashT = "The\t tab escape sequence";
+        System.out.println(backSlashT);
+        // \t creates a tab where it is placed
+
+
+
+
+
 
 
 
