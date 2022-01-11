@@ -2,6 +2,7 @@ package com.company;
 
 import java.awt.*;
 
+import java.util.Arrays;
 import java.util.Date;
 //util packages that have been imported
 
@@ -128,6 +129,32 @@ public class Main {
         String backSlashT = "The\t tab escape sequence";
         System.out.println(backSlashT);
         // \t creates a tab where it is placed
+
+        //ARRAYS
+
+        //one way to instantiate an array (older method)
+        int[] numbers = new int [5];
+        //type, [] refers to creating an array, = new because it's a reference type, type again, [5] is how many elements within the array
+        numbers[0] = 1;
+        //setting the first index of the array a value of 1
+
+        System.out.println(Arrays.toString(numbers));
+        //Arrays.toString(); is how to call the numbers array
+
+        //another way to instantiate an array
+        int [] numbers2 = {1, 3, 2, 5, 4};
+
+        System.out.println(Arrays.toString(numbers2));
+
+        Arrays.sort(numbers2);
+        //.sort() sorts the integers in the array from least to greatest
+        System.out.println(Arrays.toString(numbers2));
+
+        System.out.println(numbers2.length);
+        //counts the amount of elements in the array
+
+
+
 
 
 
