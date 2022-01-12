@@ -132,7 +132,7 @@ public class Main {
 
         //ARRAYS
 
-        //one way to instantiate an array (older method)
+        //one way to declare and instantiate an array (older method)
         int[] numbers = new int [5];
         //type, [] refers to creating an array, = new because it's a reference type, type again, [5] is how many elements within the array
         numbers[0] = 1;
@@ -141,8 +141,8 @@ public class Main {
         System.out.println(Arrays.toString(numbers));
         //Arrays.toString(); is how to call the numbers array
 
-        //another way to instantiate an array
-        int [] numbers2 = {1, 3, 2, 5, 4};
+        //another way to declare and instantiate an array
+        int[] numbers2 = {1, 3, 2, 5, 4};
 
         System.out.println(Arrays.toString(numbers2));
 
@@ -152,6 +152,37 @@ public class Main {
 
         System.out.println(numbers2.length);
         //counts the amount of elements in the array
+
+        //MULTIDIMENSIONAL ARRAYS
+
+        //2D Array
+        int [][] matrix = new int[2][3];
+        //this will make a matrix with 2 rows and 3 columns
+
+        matrix[0][0] = 1;
+        //first index of the row, first index of the column = 1
+
+        System.out.println(Arrays.deepToString(matrix));
+        //to print out the 2D matrix, use deepToString
+
+        //Another way to create a 2D array
+        int [][] matrix2 = {{1, 2, 3}, {4, 5, 6}};
+        System.out.println(Arrays.deepToString(matrix2));
+
+        int [][][] matrix3D = new int[2][3][5];
+        //can turn this into a multidimensional array by adding more brackets
+        //or using the other method and using more curly braces
+
+
+
+
+
+
+
+
+
+
+
 
 
 
