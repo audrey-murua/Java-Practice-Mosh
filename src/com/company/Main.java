@@ -179,6 +179,42 @@ public class Main {
         //final is the keyword to make the variable a constant. Similar to const in JS, you cannot change the value of the variable later on
         // use all capital letters when naming a constant variable, with underscores separating words
 
+        //ARITHMETIC EXPRESSIONS
+
+        int result = 10 + 3;
+        System.out.println(result);
+
+        int result2 = 10 - 3;
+        System.out.println(result2);
+
+        int result3 = 10 * 3;
+        System.out.println(result3);
+
+        int result4 = 10 / 3;
+        System.out.println(result4);
+        // division only prints whole numbers because of the int type
+
+        double result5 = (double)10 / (double) 3;
+        System.out.println(result5);
+        //this will give a floating point number
+
+        int i = 1;
+        i++;
+        System.out.println(i);
+        //post increments
+
+        int j = 1;
+        int k = j++;
+        System.out.println(j);
+        System.out.println(k);
+
+
+
+
+
+
+
+
 
 
 
