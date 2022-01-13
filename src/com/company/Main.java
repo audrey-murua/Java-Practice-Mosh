@@ -173,6 +173,13 @@ public class Main {
         //can turn this into a multidimensional array by adding more brackets
         //or using the other method and using more curly braces
 
+        //CONSTANTS
+
+        final float PI = 3.14F;
+        //final is the keyword to make the variable a constant. Similar to const in JS, you cannot change the value of the variable later on
+        // use all capital letters when naming a constant variable
+
+
 
 
 
