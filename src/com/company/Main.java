@@ -177,7 +177,7 @@ public class Main {
 
         final float PI = 3.14F;
         //final is the keyword to make the variable a constant. Similar to const in JS, you cannot change the value of the variable later on
-        // use all capital letters when naming a constant variable
+        // use all capital letters when naming a constant variable, with underscores separating words
 
 
 
