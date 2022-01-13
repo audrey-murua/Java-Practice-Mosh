@@ -4,6 +4,7 @@ import java.awt.*;
 
 import java.util.Arrays;
 import java.util.Date;
+import java.util.Scanner;
 //util packages that have been imported
 
 public class Main {
@@ -283,6 +284,40 @@ public class Main {
         int mathResult9 = (int) (Math.random() * 100);
         System.out.println(mathResult9);
         //returns a random number between 0 - 100 as a whole integer without the .random method
+
+        //READING INPUT
+
+        Scanner scanner = new Scanner(System.in);
+        //scanner is an object, new is used to instantiate scanner, System is a class and in is the field for system and will be read from the terminal window
+        System.out.println("What is your age?");
+        //asking user what their name is, when user inputs their age and presses enter then scanner.nextByte() takes over
+        byte userAge = scanner.nextByte();
+        //scanner.next() , scanner.nextLine(), etc is used to read data
+        System.out.println("You are " + userAge);
+
+        System.out.println("What is your name?");
+        String userName = scanner.next();
+        System.out.println("Your name is " + userName);
+        //The words that are being inputted into the terminal are tokens
+        //the next() method reads only one token, so it will return only one input
+
+        System.out.println("What is your name?");
+        String userNameDos = scanner.nextLine();
+        //nextLine() will return whatever the user enters no matter how many spaces or tabs
+        //String userNameDos = scanner.nextLine().trim(); (this is chaining methods)
+        //you can add .trim to take the white spaces that a user may enter away
+        System.out.println("Your name is " + userNameDos);
+
+
+
+
+
+
+
+
+
+
+
 
 
 
