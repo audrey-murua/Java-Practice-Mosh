@@ -224,6 +224,33 @@ public class Main {
         g += 2;
         //this is the shorthand way (augmented assignment operator)
 
+        //CASTING
+
+        short m = 1;
+        int n = m + 2;
+        System.out.println(n);
+        // implicit casting - automatic conversion of two different types, one has to convert to the other
+        // byte > short > int > long > float > double
+
+        double p = 1.1;
+        int q = (int)p + 2;
+        System.out.println(q);
+        //explicit casting - converting a type to match the other, can only happen to compatible types (byte to short etc)
+
+        String s = "1";
+        System.out.println(Integer.parseInt(s));
+        //Integer is a wrapper class for the int primitive type
+        //this will convert the string into an integer
+
+        int t = Integer.parseInt(s) + 2;
+        //this is another way of turning a string into an integer and using it as an arithmetic expression to return an int value
+        System.out.println(t);
+
+
+
+
+
+
 
 
 
