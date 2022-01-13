@@ -207,6 +207,7 @@ public class Main {
         int k = j++;
         System.out.println(j);
         System.out.println(k);
+        //k will copy the value of j which is 1, and then it will increment 1 to 2 so the value of j will be 2
 
 
 
