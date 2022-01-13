@@ -246,6 +246,48 @@ public class Main {
         //this is another way of turning a string into an integer and using it as an arithmetic expression to return an int value
         System.out.println(t);
 
+        //MATH CLASS
+
+        int mathResult = Math.round(1.1F);
+        System.out.println(mathResult);
+        //this rounds the floating number to a whole integer
+
+        int mathResult2 = (int)Math.ceil(1.1F);
+        System.out.println(mathResult2);
+        //returns the smallest integer that is greater than or equal to this number
+
+        int mathResult3 = (int)Math.floor(1.1F);
+        System.out.println(mathResult3);
+        //returns the largest integer that is smaller than or equal to this number
+
+        int mathResult4 = Math.max(5, 10);
+        System.out.println(mathResult4);
+        //returns the greater of two values
+
+        int mathResult5 = Math.min(5, 10);
+        System.out.println(mathResult5);
+        //returns the lesser of two values
+
+        double mathResult6 = Math.random();
+        System.out.println(mathResult6);
+        //chooses a random number between 0 - 1
+
+        double mathResult7 = Math.random() * 100;
+        System.out.println(mathResult7);
+        //returns a random number between 0 - 100
+
+        int mathResult8 = (int)Math.round(Math.random() * 100);
+        System.out.println(mathResult8);
+        //returns a random number between 0 - 100 as a whole integer
+
+        int mathResult9 = (int) (Math.random() * 100);
+        System.out.println(mathResult9);
+        //returns a random number between 0 - 100 as a whole integer without the .random method
+
+
+
+
+
 
 
 
