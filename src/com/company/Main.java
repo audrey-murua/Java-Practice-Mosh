@@ -209,6 +209,22 @@ public class Main {
         System.out.println(k);
         //k will copy the value of j which is 1, and then it will increment 1 to 2 so the value of j will be 2
 
+        int a = 1;
+        int b = ++a;
+        System.out.println(a);
+        System.out.println(b);
+        //since this is a pre increment, a will be incremented by 1 which will then turn the value to 2 and then copy it to b, resulting both a and b to be 2
+
+        int f = 1;
+        f = f + 2;
+        System.out.println(f);
+        //this is the long way
+
+        int g = 1;
+        g += 2;
+        //this is the shorthand way (augmented assignment operator)
+
+
 
 
 
