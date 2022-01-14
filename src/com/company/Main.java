@@ -288,7 +288,7 @@ public class Main {
         //READING INPUT
 
         Scanner scanner = new Scanner(System.in);
-        //scanner is an object, new is used to instantiate scanner, System is a class and in is the field for system and will be read from the terminal window
+        //new is used to instantiate scanner, scanner is an object, System is a class and in is the field for system and refers to information the user types into the terminal
         System.out.println("What is your age?");
         //asking user what their name is, when user inputs their age and presses enter then scanner.nextByte() takes over
         byte userAge = scanner.nextByte();
@@ -305,8 +305,21 @@ public class Main {
         String userNameDos = scanner.nextLine();
         //nextLine() will return whatever the user enters no matter how many spaces or tabs
         //String userNameDos = scanner.nextLine().trim(); (this is chaining methods)
-        //you can add .trim to take the white spaces that a user may enter away
+        //you can add .trim to take the white spaces, that a user may enter, away
         System.out.println("Your name is " + userNameDos);
+
+        String name = "user";
+        System.out.printf("Hello there, %s. Nice to see you.%n", name);
+        //This allows us to define a string with placeholders and then pass values for those placeholders.
+        //the %s will be replaced with the value of the name variable
+        //%n adds a newline to the output- that's handled by our use of %n at the end which adds in a newline character after our output.
+        //similar to System.out.println(); but since we're using printf, %n is needed to create a new line
+
+        String greeting = "Hola";
+        System.out.printf("%s, %s!", greeting, name);
+        //can use multiple placeholders and will print in the order the arguments are passed
+
+
 
 
 
