@@ -26,6 +26,27 @@ public class ControlFlow {
         System.out.println(v >= w);
         //>= greater than or equal to operator
 
+        //LOGICAL OPERATORS
+
+        //&& and operator, both expressions have to be true, to evaluate to true
+        int temperature = 25;
+        boolean isWarm = temperature  > 20 && temperature < 30;
+        System.out.println(isWarm);
+
+        // \\ or operator both expressions have to be false to evaluate to false, ! not operator reverses the boolean value of variable
+        boolean hasHighIncome = true;
+        boolean hasGoodCredit = false;
+        boolean hasCriminalRecord = false;
+        boolean isEligible = (hasHighIncome || hasGoodCredit) && !hasCriminalRecord;
+        System.out.println(isEligible);
+
+        //IF STATEMENTS
+
+
+
+
+
+
 
 
 
