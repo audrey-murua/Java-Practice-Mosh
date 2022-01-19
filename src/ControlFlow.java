@@ -99,6 +99,45 @@ public class ControlFlow {
         // : - else it will print "Economy"
 
 
+        //SWITCH STATEMENTS
+        //execute different code depending on the value of an expression
+
+        String role = "admin";
+
+        if (role == "admin")
+            System.out.println("You are an admin");
+        else if (role == "moderator")
+            System.out.println("You are a moderator");
+        else
+            System.out.println("You are a guest");
+
+        //switch statement example
+
+        switch (role) {
+            //inside the parenthesis is the variable, role
+            // inside the code block (the curly braces), add one or more case clauses
+            case "admin" :
+                System.out.println("You are an admin");
+                //if the boolean value is true when admin is read, "You are an admin will print"
+                break;
+                //break statement to jump out of this particular switch block / case clause
+            case "moderator" :
+                System.out.println("You are a moderator");
+                break;
+            default :
+                //default section will execute if the above cases were not printed
+                System.out.println("You are a guest");
+                //do not need a break statement because it's the end of the switch block, and it will automatially jump out of this block
+
+
+        }
+
+
+
+
+
+
+
 
 
 
