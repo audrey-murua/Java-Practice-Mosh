@@ -42,6 +42,29 @@ public class ControlFlow {
 
         //IF STATEMENTS
 
+        int temp = 32;
+        if (temp > 30) {
+            System.out.println("It's a hot day");
+            System.out.println("Drink plenty of water");
+        } else if (temp > 20 && temp <= 30) {
+            System.out.println("It's a beautiful day");
+        } else {
+            System.out.println("It's a cold day");
+        }
+
+
+        //curly braces are only required if there is multiple statements, controversial subject
+        int temp2 = 32;
+        if (temp2 > 30) {
+            System.out.println("It's a hot day");
+            System.out.println("Drink plenty of water");
+        }
+        else if (temp2 > 20)
+            System.out.println("It's a beautiful day");
+        else
+            System.out.println("It's a cold day");
+
+
 
 
 
