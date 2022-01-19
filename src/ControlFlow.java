@@ -202,7 +202,8 @@ public class ControlFlow {
             //if the input does not equal quit, print the bottom string, otherwise it will quit out of the program
             System.out.println("Enter your input: ");
             input = sc.next().toLowerCase();
-            System.out.println(input);
+            if(!input.equals("quit"))
+                System.out.println(input);
 
         }
 
@@ -218,6 +219,30 @@ public class ControlFlow {
             input = sc.next().toLowerCase();
             System.out.println(input);
         } while (!input.equals("quit"));
+
+
+        //BREAK AND CONTINUE
+
+        //using the while loop example
+
+
+        while (true) {
+            //while loop is always true and will run forever until the user types in quit,
+            // also important to make sure to use a break statement in a while true loop, or it will run forever
+            System.out.println("Enter your input: ");
+            input = sc.next().toLowerCase();
+            if(input.equals("pass"))
+                continue;
+            //if the user types in pass, the continue statement will take it to the beginning of the loop and ignore the rest of the code after the continue statement
+            if(input.equals("quit"))
+                break;
+            //if the input equals to quit, break out of the loop, otherwise print the sout
+                System.out.println(input);
+
+        }
+
+        //break statements terminate a loop
+        //continue statements moves to the beginning of the loop
 
 
 
