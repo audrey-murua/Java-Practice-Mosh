@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class ControlFlow {
 
     public static void main(String[] args) {
@@ -128,9 +130,28 @@ public class ControlFlow {
                 //default section will execute if the above cases were not printed
                 System.out.println("You are a guest");
                 //do not need a break statement because it's the end of the switch block, and it will automatially jump out of this block
-
-
         }
+
+        // EXERCISE FIZZ/BUZZ
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a number: ");
+        int userInput = scanner.nextInt();
+
+
+        if((userInput % 3 == 0) && (userInput % 5 == 0)) {
+            System.out.println("FizzBuzz");
+        } else if ( userInput % 3 == 0) {
+            System.out.println("Buzz");
+        } else if ( userInput % 5 == 0) {
+            System.out.println("Fizz");
+        } else {
+            System.out.println(userInput);
+        }
+
+        //most specific conditions should be on top and the most generic on the bottom
+        //the code reads from top to bottom, meaning that if the first condition is true, it will execute that and ignore the other conditions
+
 
 
 
