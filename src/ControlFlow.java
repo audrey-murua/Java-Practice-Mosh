@@ -152,6 +152,7 @@ public class ControlFlow {
         //most specific conditions should be on top and the most generic on the bottom
         //the code reads from top to bottom, meaning that if the first condition is true, it will execute that and ignore the other conditions
 
+
         //FOR LOOPS
 
         for (int i = 0; i < 5; i++) {
@@ -164,7 +165,7 @@ public class ControlFlow {
             System.out.println("Hello World" + j);
         }
 
-        //same as above except it will begin at 1, not 0. It will print 1 -5
+        //same as above except it will begin at 1, not 0. It will print 1 - 5
 
         for (int k = 5; k > 0; k--) {
             System.out.println("Hello World" + k);
@@ -172,7 +173,43 @@ public class ControlFlow {
 
         //this will begin at 5 and decrement its way down. Will print 5 - 1
 
+
         //WHILE LOOPS
+
+        //While loops are very similar to for loops in terms of functionality, but different as far as syntax goes.
+
+        int l = 0;
+        //initialize the variable
+        while (l < 10) {
+        // condition is inside the parenthesis
+            System.out.println("i is " + l);
+            l++;
+        }
+
+        //while loops are better to use when you don't know how many times you want to repeat something
+
+        //more of a real life example, not knowing how many times you need to repeat something
+        //program where the user needs to type quit to exit
+
+        Scanner sc = new Scanner(System.in);
+        String input = "";
+
+        //input != "quit" will not work since it is a string (reference type) and cannot use comparison operators between reference types because these operators will compare the address or string objects, not string values
+
+
+        while (!input.equals("quit")) {
+            //if the input does not equal quit, print the bottom string, otherwise it will quit out of the program
+            System.out.println("Enter your input: ");
+            input = sc.next().toLowerCase();
+            System.out.println(input);
+
+        }
+
+
+        //DO WHILE LOOP
+
+
+
 
 
 
