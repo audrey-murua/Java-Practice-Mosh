@@ -79,6 +79,40 @@ public class ControlFlow {
         System.out.println(hasHighIncome2);
 
 
+        //TERNARY OPERATOR
+
+        int incomeExample = 120_000;
+        String className;
+
+        if (incomeExample > 100_000) {
+            className = "First";
+        } else {
+            className = "Economy";
+        }
+
+        //ternary option vs above if statement
+
+        int incomeExample2 = 120_000;
+        String className2 = income > 100_000 ? "First" : "Economy";
+        //income > 100_000 is the condition,
+        // if the condition is true ( ? - beginning of if statement returns true) it will print "First"
+        // : - else it will print "Economy"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
