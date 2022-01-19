@@ -152,6 +152,34 @@ public class ControlFlow {
         //most specific conditions should be on top and the most generic on the bottom
         //the code reads from top to bottom, meaning that if the first condition is true, it will execute that and ignore the other conditions
 
+        //FOR LOOPS
+
+        for (int i = 0; i < 5; i++) {
+            System.out.println("Hello World" + i);
+        }
+
+        //the for loop will initialize the variable i, then evaluate if i < 5, if so it will increment and print the code block until it doesn't meet the condition anymore. will print 0 - 4
+
+        for (int j = 1; j <= 5; j++) {
+            System.out.println("Hello World" + j);
+        }
+
+        //same as above except it will begin at 1, not 0. It will print 1 -5
+
+        for (int k = 5; k > 0; k--) {
+            System.out.println("Hello World" + k);
+        }
+
+        //this will begin at 5 and decrement its way down. Will print 5 - 1
+
+        //WHILE LOOPS
+
+
+
+
+
+
+
 
 
 
