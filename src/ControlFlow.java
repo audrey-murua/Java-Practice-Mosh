@@ -196,6 +196,7 @@ public class ControlFlow {
 
         //input != "quit" will not work since it is a string (reference type) and cannot use comparison operators between reference types because these operators will compare the address or string objects, not string values
 
+        //if the condition is false the first time, the loop will never run
 
         while (!input.equals("quit")) {
             //if the input does not equal quit, print the bottom string, otherwise it will quit out of the program
@@ -207,6 +208,16 @@ public class ControlFlow {
 
 
         //DO WHILE LOOP
+
+        //example of while loop as a do while loop
+        //the condition is checked last, so the loop will run at least once if it is false
+        //while loops are much more common than do while loops
+
+        do {
+            System.out.println("Enter your input: ");
+            input = sc.next().toLowerCase();
+            System.out.println(input);
+        } while (!input.equals("quit"));
 
 
 
