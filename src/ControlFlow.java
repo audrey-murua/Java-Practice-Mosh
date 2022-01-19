@@ -65,6 +65,27 @@ public class ControlFlow {
             System.out.println("It's a cold day");
 
 
+        //Simplifying If Statements
+
+        int income = 120_000;
+        boolean hasHighIncome2 = (income > 100_000);
+        //declare and initialize variable with a boolean expression instead of doing an if statement, if possible
+
+
+        //Example of unnecessary if statement
+        if (income > 100_000)
+        hasHighIncome2 = true;
+
+        System.out.println(hasHighIncome2);
+
+
+
+
+
+
+
+
+
 
 
 
