@@ -245,6 +245,28 @@ public class ControlFlow {
         //continue statements moves to the beginning of the loop
 
 
+        //FOR EACH LOOP
+
+        String [] fruits = {"Apple", "Mango", "Orange"};
+
+        //using a for loop to iterate through array
+
+        for (int t = 0; t <fruits.length; t++)
+            System.out.println(fruits[t]);
+
+        //prints out each fruit
+
+        //using a for each loop to iterate through array
+
+        for (String fruit : fruits)
+            //type, single fruit in the fruits array, : , name of array - fruits
+            System.out.println(fruit);
+
+        //for each loop has limitations such as not being able to access the index of an array and not being able to begin at the end
+
+
+
+
 
 
 
